@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuizActivity"
+    android:padding="16dp">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome your name!"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Progress Indicator -->
+    <TextView
+        android:id="@+id/questionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/5"
+        android:textSize="16sp"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_toEndOf="@id/questionCount"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="20"
+        android:max="100"/>
+
+    <!-- Question Title -->
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android question title:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Question Details -->
+    <TextView
+        android:id="@+id/questionDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question details go here"
+        android:textSize="14sp"
+        android:layout_below="@id/questionTitle"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Answer Options -->
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 1"
+        android:layout_below="@id/questionDetails"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 2"
+        android:layout_below="@id/answer1"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 3"
+        android:layout_below="@id/answer2"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/answer3"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
