@@ -79,6 +79,16 @@ Make sure your local server is running, and the path to your project is correctl
 
 ---
 
+## Setting Up Docker for Android Development
+To streamline the setup of the Android project environment, consider using Docker. By creating a Docker image that contains all necessary configurations and dependencies, new developers can easily launch the project without the hassle of manual setup.
+
+## Benefits of Using Docker:
+- Consistency: Ensures all developers work in the same environment.
+- Simplicity: New developers can get started quickly.
+- Efficiency: Reduces setup time and minimizes human error.
+- Scalability: Easily scale containers based on project needs.
+- For more details on [implementing Docker in Android development](https://www.geeksforgeeks.org/setting-up-docker-for-android-development/?itm_source=auth&itm_medium=contributions&itm_campaign=articles), check out my blog.
+---
 
 <h1>Screenshots </h1>
   <img src="https://github.com/RomilMovaliya/Quiz-Android-Application/blob/master/photos/Slide1.JPG" alt="SLIDE1.JPG"><br>
